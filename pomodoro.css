@@ -14,3 +14,11 @@ h1 {
 .start {
   background-color: lightgreen;
 }
+
+.stop {
+  background-color: red;
+}
+
+.reset {
+  background-color: lightseagreen;
+}
