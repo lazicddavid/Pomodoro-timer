@@ -2,6 +2,10 @@
   box-sizing: border-box;
 }
 
+.container {
+  margin: 50px auto;
+}
+
 h1 {
   color: rgb(32, 23, 23);
 }
