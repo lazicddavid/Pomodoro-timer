@@ -6,6 +6,10 @@
   margin: 50px auto;
 }
 
+.timer {
+  margin: 50px;
+  padding: 50px;
+}
 h1 {
   color: rgb(32, 23, 23);
 }
