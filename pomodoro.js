@@ -8,7 +8,7 @@ function updateTimer() {
   let min = Math.floor(time / 60);
   let sec = time % 60;
   if (sec < 10) {
-    sec = "0" * sec;
+    sec = "0" + sec;
   }
   timerEl.textContent = `${min}:${sec}`;
 }
@@ -33,7 +33,7 @@ stopBtn.addEventListener("click", () => {
 
 resetBtn.addEventListener("click", () => {
   clearInterval(interval);
-  interval = -null;
+  interval = null;
   time = 1500;
   updateTimer();
 });
