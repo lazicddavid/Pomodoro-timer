@@ -13,14 +13,22 @@ function updateTimer() {
   timerEl.textContent = `${min}:${sec}`;
 }
 
-startBtn.addEventListener('click', () => {
+startBtn.addEventListener("click", () => {
   if (interval) return;
   interval = setInterval(() => {
-    time --;
+    time--;
     updateTimer();
     if (time <= 0) {
-      clearInterval(interval)
+      clearInterval(interval);
       interval = null;
+      alert("Vreme je isteklo");
     }
-  }
-}
+  }, 1000);
+});
+
+stopBtn.addEventListener("click", () => {
+  clearInterval(interval);
+  interval = null;
+  timne = 1500;
+  updateTimer();
+});
