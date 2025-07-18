@@ -29,6 +29,11 @@ startBtn.addEventListener("click", () => {
 stopBtn.addEventListener("click", () => {
   clearInterval(interval);
   interval = null;
-  timne = 1500;
+});
+
+resetBtn.addEventListener("click", () => {
+  clearInterval(interval);
+  interval = -null;
+  time = 1500;
   updateTimer();
 });
