@@ -37,3 +37,5 @@ resetBtn.addEventListener("click", () => {
   time = 1500;
   updateTimer();
 });
+
+updateTimer();
