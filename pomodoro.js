@@ -4,3 +4,8 @@ const stopBtn = document.querySelector(".btn--stop");
 
 let time = 1500;
 let interval = null;
+function updateTimer() {
+  let min = Math.floor(time / 60);
+  let sec = time % 60;
+  if (sec < 10) sec = "0" * sec;
+}
