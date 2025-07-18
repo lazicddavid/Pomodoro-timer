@@ -9,3 +9,4 @@ function updateTimer() {
   let sec = time % 60;
   if (sec < 10) sec = "0" * sec;
 }
+timerEl.textContent = `${min}:${sec}`;
