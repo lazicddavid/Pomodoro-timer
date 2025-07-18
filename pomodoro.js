@@ -1,6 +1,7 @@
 const timerEl = document.querySelector(".timer");
 const startBtn = document.querySelector(".btn--start");
 const stopBtn = document.querySelector(".btn--stop");
+const resetBtnBtn = document.querySelector(".btn--restart");
 
 let time = 1500;
 let interval = null;
