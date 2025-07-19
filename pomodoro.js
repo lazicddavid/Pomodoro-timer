@@ -1,10 +1,14 @@
 let currentTime = 25000;
 let timeToDeduct = 1000;
+let timerInterval = null;
+
 const startBtn = document.querySelector(".btn--start");
 const stopBtn = document.querySelector(".btn--stop");
 const resetBtn = document.querySelector(".btn--reset");
 
-let timerInterval = null;
+let totalSecond = currentTime / 1000;
+let minutes = Math.floor(totalSecond / 60);
+let seconds = totalSecond % 60;
 
 //varijabla mi treba currentTime
 //iniciram ga sa 25000.
