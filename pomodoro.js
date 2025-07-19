@@ -1,9 +1,9 @@
 const timerEl = document.querySelector(".timer");
 const startBtn = document.querySelector(".btn--start");
 const stopBtn = document.querySelector(".btn--stop");
-const resetBtnBtn = document.querySelector(".btn--restart");
+const resetBtn = document.querySelector(".btn--reset");
 
-let time = 1500;
+let time = 1000;
 let interval = null;
 function updateTimer() {
   let min = Math.floor(time / 60);
@@ -30,13 +30,22 @@ startBtn.addEventListener("click", () => {
 stopBtn.addEventListener("click", () => {
   clearInterval(interval);
   interval = null;
+  console.log(interval);
 });
 
 resetBtn.addEventListener("click", () => {
   clearInterval(interval);
   interval = null;
-  time = 1500;
+
   updateTimer();
 });
 
 updateTimer();
+
+//varijabla mi treba currentTime
+//iniciram ga sa 25000.
+//predstavlja 25 minuta
+//treba mi jos varijabla const timeToDeduct.
+//iniciram ga sa 1000, predstavlja jednu sekundu koja treba da se makne sa tajmera
+//na dugme start, pokrecem setInterval koji krece od trenutne vrednosti currentTime,tj pocinje tako sto oduzima od trenutne vrednosti currentTime-a
+//dugme stop, cisti interval i podesi ga na nulu
