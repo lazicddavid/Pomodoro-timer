@@ -1,4 +1,4 @@
-const timerEl = document.querySelector(".timer");
+let currentTime = 25000;
 const startBtn = document.querySelector(".btn--start");
 const stopBtn = document.querySelector(".btn--stop");
 const resetBtn = document.querySelector(".btn--reset");
