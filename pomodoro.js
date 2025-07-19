@@ -1,6 +1,7 @@
 let currentTime = 25000;
 let timeToDeduct = 1000;
 let timerInterval = null;
+const display = document.querySelector(".timer");
 
 const startBtn = document.querySelector(".btn--start");
 const stopBtn = document.querySelector(".btn--stop");
