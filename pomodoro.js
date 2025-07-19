@@ -41,6 +41,13 @@ stopBtn.addEventListener("click", function () {
   updateDisplay();
 });
 
+resetBtn.addEventListener("click", function () {
+  clearInterval(timerInterval);
+  timerInterval = null;
+  currentTime = 25 * 60 * 1000;
+  updateDisplay();
+});
+
 //varijabla mi treba currentTime
 //iniciram ga sa 25000.
 //predstavlja 25 minuta
