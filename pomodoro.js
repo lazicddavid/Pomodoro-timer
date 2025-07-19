@@ -18,6 +18,13 @@ let seconds = totalSecond % 60;
 
 startBtn.addEventListener("click", function() {
   if (timerInterval !== null) return;
+
+
+  timerInterval = setInterval(function (){
+    currentTime > 0) {
+      currentTime -= timeToDeduct;
+    }
+  })
 })
 
 //varijabla mi treba currentTime
