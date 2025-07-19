@@ -23,6 +23,10 @@ startBtn.addEventListener("click", function() {
   timerInterval = setInterval(function (){
     currentTime > 0) {
       currentTime -= timeToDeduct;
+      updateDisplay();
+    } else {
+      clearInterval(timerInterval);
+      timerInterval = null;
     }
   })
 })
