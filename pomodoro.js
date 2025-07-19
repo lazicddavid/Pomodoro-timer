@@ -9,6 +9,16 @@ const resetBtn = document.querySelector(".btn--reset");
 let totalSecond = currentTime / 1000;
 let minutes = Math.floor(totalSecond / 60);
 let seconds = totalSecond % 60;
+  if (seconds < 10) {
+    display.textContent = minutes + ":0" + seconds;
+  } else {
+    display.textContent = minutes + ":" + seconds;
+  }
+}
+
+startBtn.addEventListener("click", function() {
+  if (timerInterval !== null) return;
+})
 
 //varijabla mi treba currentTime
 //iniciram ga sa 25000.
