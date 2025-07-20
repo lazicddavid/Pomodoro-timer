@@ -57,3 +57,5 @@ resetBtn;
 
 currentTime;
 let;
+
+startBtn;
