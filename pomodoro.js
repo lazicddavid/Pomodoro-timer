@@ -54,3 +54,5 @@ resetBtn.addEventListener("click", function () {
 //na dugme start, pokrecem setInterval koji krece od trenutne vrednosti currentTime,tj pocinje tako sto oduzima od trenutne vrednosti currentTime-a
 //dugme stop, cisti interval i podesi ga na nulu.
 resetBtn;
+
+currentTime;
