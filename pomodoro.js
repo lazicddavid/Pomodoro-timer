@@ -56,3 +56,4 @@ resetBtn.addEventListener("click", function () {
 resetBtn;
 
 currentTime;
+let;
