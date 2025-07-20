@@ -2,7 +2,7 @@ let currentTime = 25 * 60 * 1000;
 let timeToDeduct = 1000;
 let timerInterval = null;
 
-const display = document.querySelector(".timer"); // ✅ dodato
+const display = document.querySelector(".timer");
 const startBtn = document.querySelector(".btn--start");
 const stopBtn = document.querySelector(".btn--stop");
 const resetBtn = document.querySelector(".btn--reset");
@@ -37,8 +37,6 @@ startBtn.addEventListener("click", function () {
 stopBtn.addEventListener("click", function () {
   clearInterval(timerInterval);
   timerInterval = null;
-  currentTime = 0;
-  updateDisplay();
 });
 
 resetBtn.addEventListener("click", function () {
@@ -55,3 +53,4 @@ resetBtn.addEventListener("click", function () {
 //iniciram ga sa 1000, predstavlja jednu sekundu koja treba da se makne sa tajmera
 //na dugme start, pokrecem setInterval koji krece od trenutne vrednosti currentTime,tj pocinje tako sto oduzima od trenutne vrednosti currentTime-a
 //dugme stop, cisti interval i podesi ga na nulu.
+resetBtn;
