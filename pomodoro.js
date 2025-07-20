@@ -59,3 +59,4 @@ currentTime;
 let;
 
 startBtn;
+timerInterval;
